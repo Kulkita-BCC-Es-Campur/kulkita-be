@@ -13,11 +13,6 @@ Platform digital berbasis SaaS untuk optimalisasi manajemen bahan pangan segar p
 - [Instalasi](#instalasi)
 - [Konfigurasi](#konfigurasi)
 - [Menjalankan Aplikasi](#menjalankan-aplikasi)
-- [Docker Deployment](#docker-deployment)
-- [API Documentation](#api-documentation)
-- [Database Schema](#database-schema)
-- [Testing](#testing)
-- [Monitoring](#monitoring)
 - [Contributing](#contributing)
 
 ## 🎯 Tentang Project
@@ -246,9 +241,8 @@ Project ini menggunakan MIT License. Lihat file `LICENSE` untuk detail lengkap.
 ## 📞 Support
 
 Untuk pertanyaan atau issues:
-- Email: support@kulkita.com
-- GitHub Issues: [Repository Issues](https://github.com/your-org/kulkita-backend/issues)
-- Documentation: [Wiki](https://github.com/your-org/kulkita-backend/wiki)
+- Email: nandanatyon@gmail.com
+- Documentation: https://www.postman.com/tyo-team/workspace/kulkita/collection/32354585-2e9a3836-edd3-498b-89f1-cc7d0e71d479?action=share&source=copy-link&creator=32354585
 
 ## 🔄 Changelog
 
