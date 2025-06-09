@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            color: #2c5530;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .welcome-message {
+            background: linear-gradient(135deg, #4CAF50, #45a049);
+            color: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+        .features {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .features ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .features li {
+            margin: 10px 0;
+            color: #2c5530;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #666;
+            font-size: 14px;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1 th:text="${appName}">Foodia</h1>
+        <h2>Welcome Aboard!</h2>
+    </div>
+
+    <div class="welcome-message">
+        <h2>🎉 Welcome to <span th:text="${appName}">Foodia</span>, <span th:text="${username}">User</span>!</h2>
+        <p>Your account has been successfully verified and activated.</p>
+    </div>
+
+    <p>Thank you for joining our mission to reduce food waste and build a more sustainable future!</p>
+
+    <div class="features">
+        <h3>🌟 What you can do with <span th:text="${appName}">Foodia</span>:</h3>
+        <ul>
+            <li>📦 Track your food inventory with smart expiration monitoring</li>
+            <li>🤖 Get AI-powered recipe recommendations based on your ingredients</li>
+            <li>💝 Donate surplus food to local communities</li>
+            <li>🔄 Exchange ingredients with nearby users through our barter system</li>
+            <li>🏆 Earn rewards for your food waste reduction efforts</li>
+        </ul>
+    </div>
+
+    <p>Ready to start your journey towards zero food waste? Begin by adding your first food items to your inventory!</p>
+
+    <div style="text-align: center;">
+        <a href="#" class="cta-button">Get Started Now</a>
+    </div>
+
+    <p>If you have any questions or need help getting started, don't hesitate to reach out to our support team.</p>
+
+    <div class="footer">
+        <p>Happy food saving!</p>
+        <p>The <span th:text="${appName}">Foodia</span> Team</p>
+        <p>&copy; 2025 <span th:text="${appName}">Foodia</span>. All rights reserved.</p>
+    </div>
+</div>
+</body>
+</html>

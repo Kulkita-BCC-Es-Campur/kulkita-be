@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Verification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            color: #2c5530;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .otp-code {
+            background-color: #f8f9fa;
+            border: 2px dashed #4CAF50;
+            padding: 20px;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            color: #2c5530;
+            margin: 30px 0;
+            border-radius: 8px;
+            letter-spacing: 8px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #666;
+            font-size: 14px;
+        }
+        .warning {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1 th:text="${appName}">Foodia</h1>
+        <h2>Email Verification Required</h2>
+    </div>
+
+    <p>Hello!</p>
+
+    <p>Thank you for registering with <span th:text="${appName}">Foodia</span>. To complete your registration and activate your account, please use the verification code below:</p>
+
+    <div class="otp-code" th:text="${otp}">123456</div>
+
+    <div class="warning">
+        <strong>Important:</strong> This verification code will expire in <span th:text="${validityMinutes}">5</span> minutes. If you don't verify your email within this time, you'll need to request a new verification code.
+    </div>
+
+    <p>If you didn't create an account with <span th:text="${appName}">Foodia</span>, please ignore this email.</p>
+
+    <div class="footer">
+        <p>This is an automated message, please do not reply to this email.</p>
+        <p>&copy; 2025 <span th:text="${appName}">Foodia</span>. All rights reserved.</p>
+    </div>
+</div>
+</body>
+</html>
