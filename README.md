@@ -1,8 +1,9 @@
 # Kulkita Backend API
-
 **Kulkita: Segar Terkelola, Gizi Tersalur**
 
 Platform digital berbasis SaaS untuk optimalisasi manajemen bahan pangan segar pada Program Makan Bergizi Gratis (MBG) di SPPG Jawa Barat. Sistem ini menggunakan teknologi AI dan Machine Learning untuk mengurangi food loss dan meningkatkan efisiensi operasional.
+
+![BCC Es Campur - Pitch Deck - Hackathon elevAIte Indonesia pptx](https://github.com/user-attachments/assets/92157432-e30b-4ce2-b7fd-678a7a793abc)
 
 ## 📋 Daftar Isi
 
